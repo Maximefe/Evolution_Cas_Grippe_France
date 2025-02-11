@@ -1,0 +1,24 @@
+[2025-02-11 11:00:57,594] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: grippe_ETL_pipeline.transform_vaccins2024 manual__2025-02-11T11:00:46.370922+00:00 [queued]>
+[2025-02-11 11:00:57,610] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: grippe_ETL_pipeline.transform_vaccins2024 manual__2025-02-11T11:00:46.370922+00:00 [queued]>
+[2025-02-11 11:00:57,611] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-11 11:00:57,611] {taskinstance.py:1357} INFO - Starting attempt 1 of 4
+[2025-02-11 11:00:57,612] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-11 11:00:57,633] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): transform_vaccins2024> on 2025-02-11 11:00:46.370922+00:00
+[2025-02-11 11:00:57,639] {standard_task_runner.py:52} INFO - Started process 328 to run task
+[2025-02-11 11:00:57,644] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'grippe_ETL_pipeline', 'transform_vaccins2024', 'manual__2025-02-11T11:00:46.370922+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Vaccin.py', '--cfg-path', '/tmp/tmpc0aelgie', '--error-file', '/tmp/tmp9ce1wn0t']
+[2025-02-11 11:00:57,645] {standard_task_runner.py:80} INFO - Job 49: Subtask transform_vaccins2024
+[2025-02-11 11:00:57,737] {task_command.py:370} INFO - Running <TaskInstance: grippe_ETL_pipeline.transform_vaccins2024 manual__2025-02-11T11:00:46.370922+00:00 [running]> on host 976dfa0d1440
+[2025-02-11 11:00:57,856] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=grippe_ETL_pipeline
+AIRFLOW_CTX_TASK_ID=transform_vaccins2024
+AIRFLOW_CTX_EXECUTION_DATE=2025-02-11T11:00:46.370922+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-02-11T11:00:46.370922+00:00
+[2025-02-11 11:00:57,934] {logging_mixin.py:115} INFO - ✅ VACCINS2024 - Fichier TRANSFORMÉ sauvegardé : data/transformed_vaccins2024_20250211_110057.csv (52 lignes)
+[2025-02-11 11:00:57,934] {python.py:173} INFO - Done. Returned value was: None
+[2025-02-11 11:00:57,958] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=grippe_ETL_pipeline, task_id=transform_vaccins2024, execution_date=20250211T110046, start_date=20250211T110057, end_date=20250211T110057
+[2025-02-11 11:00:58,028] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-02-11 11:00:58,104] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

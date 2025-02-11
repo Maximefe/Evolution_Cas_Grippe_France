@@ -1,0 +1,24 @@
+[2025-02-11 11:00:55,158] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: grippe_ETL_pipeline.extract_vaccins2024 manual__2025-02-11T11:00:46.370922+00:00 [queued]>
+[2025-02-11 11:00:55,172] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: grippe_ETL_pipeline.extract_vaccins2024 manual__2025-02-11T11:00:46.370922+00:00 [queued]>
+[2025-02-11 11:00:55,173] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-11 11:00:55,173] {taskinstance.py:1357} INFO - Starting attempt 1 of 4
+[2025-02-11 11:00:55,174] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-02-11 11:00:55,193] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): extract_vaccins2024> on 2025-02-11 11:00:46.370922+00:00
+[2025-02-11 11:00:55,198] {standard_task_runner.py:52} INFO - Started process 322 to run task
+[2025-02-11 11:00:55,203] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'grippe_ETL_pipeline', 'extract_vaccins2024', 'manual__2025-02-11T11:00:46.370922+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Vaccin.py', '--cfg-path', '/tmp/tmpkqufr9ny', '--error-file', '/tmp/tmpdv8023ag']
+[2025-02-11 11:00:55,204] {standard_task_runner.py:80} INFO - Job 47: Subtask extract_vaccins2024
+[2025-02-11 11:00:55,288] {task_command.py:370} INFO - Running <TaskInstance: grippe_ETL_pipeline.extract_vaccins2024 manual__2025-02-11T11:00:46.370922+00:00 [running]> on host 976dfa0d1440
+[2025-02-11 11:00:55,416] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=grippe_ETL_pipeline
+AIRFLOW_CTX_TASK_ID=extract_vaccins2024
+AIRFLOW_CTX_EXECUTION_DATE=2025-02-11T11:00:46.370922+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-02-11T11:00:46.370922+00:00
+[2025-02-11 11:00:55,640] {ETL_Vaccin.py:43} INFO - ✅ VACCINS2024 - Fichier RAW sauvegardé : data/raw_vaccins2024_20250211_110055.csv
+[2025-02-11 11:00:55,641] {python.py:173} INFO - Done. Returned value was: None
+[2025-02-11 11:00:55,660] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=grippe_ETL_pipeline, task_id=extract_vaccins2024, execution_date=20250211T110046, start_date=20250211T110055, end_date=20250211T110055
+[2025-02-11 11:00:55,711] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-02-11 11:00:55,774] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
